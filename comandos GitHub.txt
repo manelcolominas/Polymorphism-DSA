@@ -1,0 +1,21 @@
+
+Download a Project
+git clone https://github.com/manelcolominas/Questions-Answers.git
+
+git tag
+git checkout tags/VersionConMultiplesFormularios
+
+Actualizar arxius GitHub
+
+git pull origin main
+git add .
+git commit -m "Descripción breve de los cambios"
+git push origin main
+
+git tag v1.0
+git push origin v1.0
+
+
+
+
+
