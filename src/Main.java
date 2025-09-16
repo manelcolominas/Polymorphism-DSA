@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //Main.java
 public class Main {
 
@@ -9,8 +11,30 @@ public class Main {
         v[2] = new Rectangle(5,5);
         v[3] = new Circle(120);
 
-        double res = Shape.sumArea(v);
-
+        double res = sum(v);
         System.out.println("sum: " + res);
+
+        print(v);
+        sort(v);
+        print(v);
+    }
+
+    public static double sum(Shape[] s){
+        double sum = 0;
+        for(Shape s1 : s){
+            sum += s1.area();
+        }
+        return sum;
+    }
+
+    public static void sort(Shape[] s){
+        Arrays.sort(s);
+    }
+
+    public static void print(Shape[] sh) {
+        for (int i = 0; i < sh.length; i++) {
+            System.out.print("area: " + sh[i].area() + "\n");
+        }
+        System.out.println("----\n");
     }
 }

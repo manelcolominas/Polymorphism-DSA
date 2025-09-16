@@ -1,16 +1,15 @@
 //Rectangle.java
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     double base;
     double height;
 
-    public Rectangle(double base, double height) {
-        this.base = base;
-        this.height = height;
+    public Rectangle(double b, double h) {
+        base = b;
+        height = h;
     }
 
     @Override
-    public double calculateArea() {
-        double area = (base*height);
-        return area;
+    public double area() {
+        return (base*height);
     }
 }

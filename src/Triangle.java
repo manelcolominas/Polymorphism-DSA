@@ -1,16 +1,15 @@
 //Triangle.java
 public class Triangle extends Shape{
-    double base;
-    double height;
+    private double base, height;
 
-    public Triangle(double base, double height) {
-        this.base = base;
-        this.height = height;
+    public Triangle(double b, double h) {
+        base = b;
+        height = h;
     }
 
     @Override
-    public double calculateArea() {
-        double area = (base*height)/2;
-        return area;
+    public double area() {
+        return (base*height)/2;
+
     }
 }
